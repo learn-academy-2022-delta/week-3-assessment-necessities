@@ -1,5 +1,7 @@
 // ASSESSMENT 3: Coding Practical Questions with Jest
 
+const { isTSEnumDeclaration } = require("@babel/types")
+
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
 // If you get stuck, please leave comments to help us understand your thought process
@@ -12,6 +14,43 @@
 
 
 // --------------------1) Create a function that takes in a number (greater than 2) and returns an array that length containing the numbers of the Fibonacci sequence.
+
+        // I'm going to declare a function named returnSpecificArray;
+        // it will take one integer input called arrayLength;
+        // and output a array called fibArray;
+        // The output array will be the length equal to the input integer;
+        //     to creat the array that length i will make a for loop and let it run as many times as the integer;
+        //     the loop will append values to the new array for every iteration
+        // every new value added to the array will be the next value of the fibbonaci sequence in order 
+
+        // the fibonacci sequence is a spefic sequence found by adding 1 + 1 + sum + sum, etc so i will need to represent that as well - I will add the first two numbers then append the sum to the array, everytime the array runs i will add the newest value in the array to a variable then append the sum to the array again 
+
+const returnSpecificArray = (arrayLength) => {
+    let fibArray = []
+    let fibNumber = [1,2,3,4,5,6,7]
+    let fibNum1 = 1
+    let fibNum2 = 0
+    let fibNum3 = 0
+
+
+    for (let i = 0; i < arrayLength; i++) {
+        fibArray.push(fibNumber[i])
+
+        fibNum3 = fibNum1 + fibNum2
+        fibNum2 = 
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
 
 // a) Create a test with expect statements for each of the variables provided.
 
